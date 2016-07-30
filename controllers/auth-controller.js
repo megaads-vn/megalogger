@@ -6,14 +6,13 @@ function AuthController($config, $event, $logger) {
 
 	this.getToken = function(io){
 		var inputs = io.inputs;
-		io.json(inputs);
-		// var apiKey = inputs.api_key;
-		// // set expried time for token is 60 second
-		// var token = jwt.sign({ api_key: apiKey }, 'shhhhh', { expiresIn: 60 });
-		// var responseData = {};
-		// responseData.token = token;
-		// //response
-		// io.json(responseData);
+		var apiKey = inputs.api_key;
+		// set expried time for token is 60 second
+		var token = jwt.sign({ api_key: apiKey }, 'shhhhh', { expiresIn: 60 });
+		var responseData = {};
+		responseData.token = token;
+		//response
+		io.json(responseData);
 	}
 
 	this.verifyToken = function(io){

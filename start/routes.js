@@ -6,7 +6,7 @@ module.exports = function ($route, $logger) {
 		io.echo("hello");
     });
 
-    $route.any("/logger/v1/get-token", "AuthController@getToken");
+    $route.post("/logger/v1/get-token", "AuthController@getToken");
 
     $route.any("/logger/v1/verify-token", "AuthController@verifyToken");
     /** Register socket.io requests **/
