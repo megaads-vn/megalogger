@@ -8,7 +8,9 @@ module.exports = function ($route, $logger) {
 
     $route.post("/logger/v1/get-token", "AuthController@getToken");
 
-    $route.any("/logger/v1/verify-token", "AuthController@verifyToken");
+    $route.post("/logger/v1/verify-token", "AuthController@verifyToken");
+
+    $route.post("/logger/v1/init-log", "AuthController@initLog");
     /** Register socket.io requests **/
     /** Register filters **/
 };

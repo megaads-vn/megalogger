@@ -16,15 +16,22 @@ function AuthController($config, $event, $logger) {
 	}
 
 	this.verifyToken = function(io){
+		var response = {};
 		var inputs = io.inputs;
 		var token = inputs.token;
 		// verify token
 		try {
   			var decoded = jwt.verify(token, 'shhhhh');
-  			io.json(decoded);
+  			response.status = 'successful';
 		} catch(err) {
-			io.json(err);
+			response.status = 'failed';
 		}
+		io.json(response);
+	}
+
+	this.initLog = function(io){
+		var inputs = io.inputs;
+		io.json(inputs);
 	}
 
 }
