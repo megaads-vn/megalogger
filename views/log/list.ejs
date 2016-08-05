@@ -1,0 +1,37 @@
+<div class=" col-xs-12 "> 
+    <table class="table table-user-information table-logger" role="react">
+        <thead>
+            <tr>
+                <th class="text-center" style="width: 100px">
+                    Counts
+                </th>
+                <th style="width: 42px" class="text-center">
+
+                </th>
+                <th>
+                    Title
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="log in logs">
+                <td style="text-align: center; width: 100px" >
+                    <span class="badge item-count {{getByField(cssClass,'key',log._id.level).value}}">{{log.total}}</span>
+                </td>
+                <td style="width: 42px" class="text-center">
+                    <span style="text-align: right" class="{{log._id.level}} logger ellipsis"></span>
+                </td>
+                <td><a data-toggle="modal" data-target="#myModal" href="#">{{log._id.title}}</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-xs-6">
+
+        </div>
+        <div class="col-xs-6">
+            <!--pagination-->
+            <%- include('../common/paginator')%>
+        </div>
+    </div>
+</div>

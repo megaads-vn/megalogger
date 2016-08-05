@@ -1,0 +1,39 @@
+
+<html>
+    <%- include('../common/header') -%>
+    <script>//
+        var sources = <%- JSON.stringify(sources) %>;
+//    </script>
+    <body ng-app="megalog">
+    <controller ng-controller="LogController">
+        <header role="header">
+            <%- include('../common/nav') -%>
+        </header>
+        <main role="main">
+            <div class="container">
+<!--                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Đừng thở dài hãy vươn vai mà sống. Bùn dưới chân nhưng nắng ở trên đầu.
+                </div>-->
+                <div id="filter">
+                    <%- include('filter') -%>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Top 10 items in last 24 hours</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">                            
+                            <%- include('list') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <%- include('../common/footer') -%>
+        <script src="/controller/log-controller.js" type="text/javascript"></script>
+    </controller>
+
+</body>
+</html>
