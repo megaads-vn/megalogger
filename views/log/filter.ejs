@@ -3,7 +3,7 @@
         <label for="inputEmail3" class="col-sm-1" style="padding-right: 0; padding-top: 10px;">Source</label>
         <div class="col-sm-10">
             <select class="selectpicker" ng-model="filter.source"
-                    ng-change="find()"
+                    ng-change="find(true)"
                     ng-options="item.name for item in sources track by item.name">
             </select>
         </div>
@@ -21,7 +21,7 @@
             <input type="text"  placeholder="Filed" class="form-control" />
         </div>-->
         <div class="col-sm-3">
-            <select class="selectpicker" ng-model="filter.level" ng-change="find()">
+            <select class="selectpicker" ng-model="filter.level" ng-change="find(true)">
                 <option value="">Choose Level</option>
                 <option ng-repeat="item in levels" class="{{item.class}} logger ellipsis" value="{{item.value}}">{{item.name}}</option>
             </select>
@@ -32,7 +32,7 @@
     <div class="col-md-5">
         <div class="form-group">
             <div class="input-group date">
-                <input type="text" placeholder="Time From" class="form-control datepicker" ng-model="filter.timeFrom" ng-change="find()" />
+                <input type="text" placeholder="Time From" class="form-control datepicker" ng-model="filter.timeFrom" ng-change="find(true)" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -42,7 +42,7 @@
     <div class="col-md-5">
         <div class="form-group">
             <div class="input-group date">
-                <input type="text" placeholder="Time To" class="form-control datepicker" ng-model="filter.timeTo" ng-change="find()"/>
+                <input type="text" placeholder="Time To" class="form-control datepicker" ng-model="filter.timeTo" ng-change="find(true)"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -50,7 +50,7 @@
         </div>
     </div>
     <div class="col-sm-2 text-right">
-        <button class="btn btn-primary" ng-click="find()">Find</button>
+        <button class="btn btn-primary" ng-click="find(true)">Find</button>
         <button class="btn btn-warning" ng-click="reset()">Reset</button>
     </div>
     <div class="clear"></div>

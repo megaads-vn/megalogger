@@ -1,5 +1,5 @@
 <nav aria-label="Page navigation" role="pagination">
-    <ul class="pagination" ng-show="pagesCount > 0" 
+    <ul class="pagination" ng-show="pagesCount > 1" 
       ng-init="steps = [ - 5, - 4, - 3, - 2, - 1, 0, 1, 2, 3, 4, 5 ]">
         <li class="{{step == 0 ? 'active' : ''}}" ng-repeat="step in steps" ng-click="$parent.filter.pageId = $parent.filter.pageId + step;
                    $parent.find()" ng-show="$parent.filter.pageId + step >= 0 && $parent.filter.pageId+ step < $parent.pagesCount" >

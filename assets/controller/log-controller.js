@@ -3,7 +3,7 @@ function LogController($scope, $http, $rootScope) {
     //--------------------------------------------------------------------------
     $scope.sources = sources;
     $scope.filter = {
-        pageSize: 2,
+        pageSize: 3,
         pageId: 0
     };
     $scope.levels = [
@@ -33,13 +33,17 @@ function LogController($scope, $http, $rootScope) {
             dateFormat: "dd/mm/yy"
         });
     };
-    $scope.find = function () {
+    $scope.find = function (isReset) {
+        if (isReset) {
+            $scope.filter.pageId =0;
+        };
         var filterData = buildFilter();
         $scope.isFinding = true;
         $http.post("/log/find", filterData).success(function (data) {
             $scope.hideLoading();
             $scope.isFinding = false;
             if (data.status == "successful") {
+                console.log(data);
                 $scope.logs = data.logs;
                 $scope.filter.pageId = data.pageId;
                 $scope.pagesCount = data.pagesCount;

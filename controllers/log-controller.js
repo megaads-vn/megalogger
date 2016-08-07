@@ -34,9 +34,6 @@ function LogController($config, $event, $logger, $logService, $userService, $sou
 
     function recordsCountToPagesCount(recordsCount, pageSize) {
         var retVal = Math.ceil((recordsCount / pageSize));
-        if (recordsCount % pageSize > 0) {
-            retVal++;
-        }
         return retVal;
     }
 

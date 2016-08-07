@@ -41,15 +41,15 @@ function LogService($config, $event, $logger) {
             {$match: filterData},
             {$sort:{time:-1}}
         ];
-        if (typeof filter.metric =='undefined' || filter.metric !='count') {
-            query.push({$skip: pagination.skip});
-            query.push({$limit: pagination.limit});
-        }
         if (typeof filter.notGroup == "undefined" || filter.notGroup) {
             query.push({"$group": {
                     _id: {level: "$level", title: "$title"},
                     total: {"$sum": 1}
                 }});
+        }
+        if (typeof filter.metric =='undefined' || filter.metric !='count') {
+            query.push({$skip: pagination.skip});
+            query.push({$limit: pagination.limit});
         }
         console.log(query);
         Log.aggregate(query, callbackFn);
