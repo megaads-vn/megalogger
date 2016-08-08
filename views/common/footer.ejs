@@ -32,12 +32,12 @@
         </div>
     </div>
 </footer>
-<div id="myModal" class="modal fade" role="dialog">
+<div id="logDetail" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Title popup</h4>
+                <h4 class="modal-title">Log Detail</h4>
             </div>
             <div class="modal-body">
                 <table class="table table-user-information table-logger" role="react" style="margin-bottom: -1px;">
@@ -67,84 +67,24 @@
                 <div class="jscroll">
                     <table class="table table-user-information table-logger" role="react">
                         <tbody>
-                            <tr data-item-id="1">
+                            <tr ng-repeat="log in dialog.logs">
                                 <td class="col-xs-2">
-                                    NameError: undefined local variable or method `this_variable_has_not_been_set'
+                                    {{log.title}}
                                 </td>
                                 <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
+                                    <textarea class="form-control" rows="3">{{log.meta}}</textarea>
                                 </td>
                                 <td>
-                                    06/10/11 15:24:16
+                                    {{formatDate(log.time)}}
                                 </td>
                                 <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
+                                    <textarea class="form-control" rows="3">{{log.data}}</textarea>
                                 </td>
                                 <td style="width: 35px">
-                                    <span class="error logger ellipsis dashboard-item-title"></span>
+                                    <span class="{{log.level}} logger ellipsis dashboard-item-title"></span>
                                 </td>
                                 <td style="width: 60px">
-                                    Zimbabwe
-                                </td>
-                            </tr>
-                            <tr data-item-id="2">
-                                <td class="col-xs-2">
-                                    NameError: undefined local variable or method `this_variable_has_not_been_set'
-                                </td>
-                                <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
-                                </td>
-                                <td>
-                                    06/10/11 15:24:16
-                                </td>
-                                <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
-                                </td>
-                                <td>
-                                    <span class="error logger ellipsis dashboard-item-title"></span>
-                                </td>
-                                <td style="width: 60px">
-                                    Zimbabwe
-                                </td>
-                            </tr>
-                            <tr data-item-id="3">
-                                <td class="col-xs-2">
-                                    NameError: undefined local variable or method `this_variable_has_not_been_set'
-                                </td>
-                                <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
-                                </td>
-                                <td>
-                                    06/10/11 15:24:16
-                                </td>
-                                <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
-                                </td>
-                                <td>
-                                    <span class="error logger ellipsis dashboard-item-title"></span>
-                                </td>
-                                <td>
-                                    Zimbabwe
-                                </td>
-                            </tr>
-                            <tr data-item-id="4">
-                                <td class="col-xs-2">
-                                    NameError: undefined local variable or method `this_variable_has_not_been_set'
-                                </td>
-                                <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
-                                </td>
-                                <td>
-                                    06/10/11 15:24:16
-                                </td>
-                                <td class="col-xs-3">
-                                    <textarea class="form-control" rows="3">{"message":"{\"modified_user\":\"huyentrang\",\"product_code\":\"P002934\",\"product_name\":\"\",\"number_of_change\":6,\"update_info\":[{\"fields\":\"update_time\",\"old_value\":null,\"new_value\":{\"date\":\"2016-07-25 14:55:14.000000\",\"timezone_type\":3,\"timezone\":\"Asia\\/Ho_Chi_Minh\"}},{\"fields\":\"search\",\"old_value\":\"chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\",\"new_value\":\"p002934-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-chan-luoi-cho-be-chan-luoi-cho-be-mom-s-choice-size-l-160-x-200cm-mom-s-choice\"},{\"fields\":\"name\",\"old_value\":\"\",\"new_value\":\"Ch\\u0103n l\\u01b0\\u1edbi cho b\\u00e9 Mom\\u2019s Choice size L 160 x 200cm\"},{\"fields\":\"modifier_id\",\"old_value\":null,\"new_value\":\"5624\"},{\"fields\":\"modifier_username\",\"old_value\":null,\"new_value\":\"huyentrang\"},{\"fields\":\"modifier_full_name\",\"old_value\":null,\"new_value\":\"Nguy\\u1ec5n Thi Huy\\u1ec1n Trang\"}]}","context":[],"level":200,"level_name":"INFO","channel":"production","datetime":{"date":"2016-07-25 14:55:14.119480","timezone_type":3,"timezone":"Asia/Ho_Chi_Minh"},"extra":[],"timestamp":"2016-07-25T14:55:14.119480+0700"}</textarea>
-                                </td>
-                                <td>
-                                    <span class="error logger ellipsis dashboard-item-title"></span>
-                                </td>
-                                <td>
-                                    Zimbabwe
+                                    {{log.meta.language}}
                                 </td>
                             </tr>
                         </tbody>
@@ -155,20 +95,12 @@
                 <div class="row">
                     <div class="col-xs-8">
                         <nav aria-label="Page navigation" role="pop-pagination">
-                            <ul class="pagination">
-                                <li class="disabled">
-                                    <a href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li>
-                                    <a href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
+                            <ul class="pagination" ng-show="dialog.pagesCount > 1" 
+                                ng-init="steps = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]">
+                                <li class="{{step == 0 ? 'active' : ''}}" ng-repeat="step in steps" ng-click="$parent.dialog.filter.pageId = $parent.dialog.filter.pageId + step;
+                                        $parent.getLogDetail()" ng-show="$parent.dialog.filter.pageId + step >= 0 && $parent.dialog.filter.pageId + step < $parent.dialog.pagesCount" >
+                                    <a>
+                                        <span aria-hidden="true">{{$parent.dialog.filter.pageId + step + 1}}</span>
                                     </a>
                                 </li>
                             </ul>

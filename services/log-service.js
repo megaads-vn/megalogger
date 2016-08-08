@@ -28,7 +28,7 @@ function LogService($config, $event, $logger) {
      *      level:'error',
      *      pageSize:20,
      *      pageId:1,
-     *      notGroup: 1 (default=1)
+     *      notGroup: 1 (default=0)
      *      
      * }
      */
@@ -41,7 +41,7 @@ function LogService($config, $event, $logger) {
             {$match: filterData},
             {$sort:{time:-1}}
         ];
-        if (typeof filter.notGroup == "undefined" || filter.notGroup) {
+        if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
             query.push({"$group": {
                     _id: {level: "$level", title: "$title"},
                     total: {"$sum": 1}
@@ -51,7 +51,6 @@ function LogService($config, $event, $logger) {
             query.push({$skip: pagination.skip});
             query.push({$limit: pagination.limit});
         }
-        console.log(query);
         Log.aggregate(query, callbackFn);
     };
     
@@ -70,6 +69,12 @@ function LogService($config, $event, $logger) {
         var timeRange = {};
         if (typeof filter.keyword != "undefined" && filter.keyword != null) {
             retVal.title = new RegExp(filter.keyword, "i");
+        }
+        if (typeof filter.title != "undefined" && filter.title != null) {
+            retVal.title = filter.title;
+        }
+        if (typeof filter.userId != "undefined" && filter.userId != null) {
+            retVal.title = filter.userId;
         }
         if (typeof filter.timeTo != "undefined" && filter.timeTo != null) {
             var dates = filter.timeTo.split("/");

@@ -21,7 +21,7 @@
                 <td style="width: 42px" class="text-center">
                     <span style="text-align: right" class="{{log._id.level}} logger ellipsis"></span>
                 </td>
-                <td><a data-toggle="modal" data-target="#myModal" href="#">{{log._id.title}}</a></td>
+                <td><a href="javascript:;" ng-click="openDialog(log)" >{{log._id.title}}</a></td>
             </tr>
         </tbody>
     </table>

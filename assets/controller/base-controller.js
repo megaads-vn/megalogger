@@ -608,5 +608,10 @@ function BaseController($scope, $http, $rootScope) {
         var strings = string.split("=");
         return {key: strings[0], value: strings[1]};
     }
+    
+    $scope.formatDate = function(stringDate){
+        var date = new Date(stringDate);
+        return (((date.getDate()+100)+'').substring(1,4)) + '/' + (((date.getMonth() + 101)+'').substring(1,4)) + '/' +  date.getFullYear();
+    }
 
 }
