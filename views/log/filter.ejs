@@ -1,0 +1,61 @@
+<form class="row">
+
+    <div class="col-sm-4">
+        <div class="row form-group">
+            <label for="inputEmail3" class="col-sm-2" style="padding-right: 0; padding-top: 10px;">Source</label>
+            <div class="col-sm-10">
+                <select class="selectpicker" ng-model="filter.source"
+                        ng-change="find(true)"
+                        ng-options="item.name for item in sources track by item.name">
+                </select>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <input type="text"  placeholder="Keyword" class="form-control" ng-model="filter.keyword"/>
+    </div>
+    <div class="col-sm-4">
+        <input type="text"  placeholder="Field" class="form-control" ng-model="filter.field"/>
+    </div>
+    <div class="clear"></div>
+    <div class="col-sm-4">
+        <div class="row form-group">
+            <label for="inputEmail3" class="col-sm-2" style="padding-right: 0; padding-top: 10px;">Level</label>
+            <div class="col-sm-10">
+                <select class="selectpicker" ng-model="filter.level" ng-change="find(true)">
+                    <option value="">Choose Level</option>
+                    <option ng-repeat="item in levels" class="{{item.class}} logger ellipsis" value="{{item.value}}">{{item.name}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <div class="input-group date">
+                <input type="text" placeholder="Time From" class="form-control datepicker" ng-model="filter.timeFrom" ng-change="find(true)" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <div class="input-group date">
+                <input type="text" placeholder="Time To" class="form-control datepicker" ng-model="filter.timeTo" ng-change="find(true)"/>
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="form-group container-fluid">
+        <button class="btn btn-primary" ng-click="find(true)">Find</button>
+        <button class="btn btn-warning" ng-click="reset()">Reset</button>
+    </div>
+    <div class="clear"></div>
+</form>

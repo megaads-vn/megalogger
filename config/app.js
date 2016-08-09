@@ -5,7 +5,10 @@ module.exports = {
     autoload: [
         "/controllers",
         "/entities",
-        "/start"
+        "/start",
+        "/services",
+        "/network"
+//        "/models"
     ],
     assetPath: "/assets",
     encryption: {

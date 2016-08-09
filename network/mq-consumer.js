@@ -1,35 +1,15 @@
 var stompit = require('stompit');
 var jwt = require('jsonwebtoken');
-
-var server1 = {
-    'host': '192.168.1.172',
-    'port': 61613,
-    'connectHeaders':{
-        'host': '',
-        'login': '',
-        'passcode': ''
-    }
-};
-
-var server2 = {
-    'host': '192.168.1.172',
-    'port': 61613,
-    'connectHeaders':{
-        'heart-beat': '5000,5000',
-        'host': '',
-        'login': '',
-        'passcode': ''
-    }
-};
-
-var servers = [server1, server2];
-
+var config = require(__dir + "/core/app/config");
+var logService = require(__dir + "/services/log-service");
+var servers = [config.get('connections.primaryServer'), config.get('connections.backupServer')];
 var reconnectOptions = {
     'maxReconnects': 10
 };
 var manager = new stompit.ConnectFailover(servers, reconnectOptions);
-manager.connect(function(error, client, reconnect) {
 
+manager.connect(function(error, client, reconnect) {
+    console.log("===== Start Listen Queue ====");
     if (error) {
         console.log('connect error ' + error.message);
         return;
@@ -58,7 +38,24 @@ manager.connect(function(error, client, reconnect) {
                 var receive_mq_data = JSON.parse(body);
                 var token = receive_mq_data.token;
                 var decode_token = jwt.decode(token);
-                console.log(decode_token);
+                var split_decode = decode_token.aud.split('_');
+                var logData = {
+                        userId:split_decode[0],
+                        title: 'Test From MQ',
+                        source: receive_mq_data.source,
+                        level: receive_mq_data.level,
+                        meta: receive_mq_data.meta,
+                        data: receive_mq_data.data
+                };
+                //console.info(logData);
+                logService.create(logData, function(err, data){
+                    if(err == null){
+                        console.log("USER_ID:"+data.userId + ";TITLE:"+data.title);
+                    }else{
+                        console.log("ERROR:"+error);
+                    }
+
+                });
             }
             client.ack(message);
         });
