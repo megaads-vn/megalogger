@@ -4,10 +4,11 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var Log = mongoose.model('Log');
 var Source = mongoose.model('Source');
+var LogTemp = mongoose.model('LogTemp');
 function LogService($config, $event, $logger) {
     this.baseService = this.__proto__ = new BaseService($config, $event, $logger);
     this.create = function (logData, callbackFn) {
-//        var bug = new Log({title: 'Bug undefined', source: 'Chiaki', level: "error", meta: {ip: "192.168.1.111", device: "iphone", language: "PHP"}, data: {line: 20, fileName: "index.php"}});
+//        var bug = new Log({userId:1234,title: 'Bug undefined', source: 'Chiaki', level: "error", meta: {ip: "192.168.1.111", device: "iphone", language: "PHP"}, data: {line: 20, fileName: "index.php"}});
         processSource(logData.source, function () {
             var bug = new Log(logData);
             bug.save(callbackFn);
@@ -39,7 +40,7 @@ function LogService($config, $event, $logger) {
         delete filterData.pageId;
         var query = [
             {$match: filterData},
-            {$sort:{time:-1}}
+            {$sort: {time: 1}}
         ];
         if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
             query.push({"$group": {
@@ -47,18 +48,35 @@ function LogService($config, $event, $logger) {
                     total: {"$sum": 1}
                 }});
         }
-        if (typeof filter.metric =='undefined' || filter.metric !='count') {
+        if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
             query.push({$skip: pagination.skip});
             query.push({$limit: pagination.limit});
+        } else {
+            query.push({$out: "logtemps"});
+
         }
-        Log.aggregate(query, callbackFn);
+        var aggregation = Log.aggregate(query);
+        aggregation.options = {allowDiskUse: true};
+        if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
+            aggregation.exec(callbackFn);
+        } else {
+            if (filter.out) {
+                aggregation.exec(function (err, data) {
+                    if (err) {
+                        console.log(err);
+                        return;
+                    }
+                    LogTemp.collection.count({}, callbackFn);
+                });
+            } else {
+                LogTemp.collection.count({}, callbackFn);
+            }
+        }
     };
-    
-    this.findCount = function(filter,callbackFn){
-        var filterData = buildFilter(filter);
-        delete filterData.pageSize;
-        delete filterData.pageId;       
-        Log.collection.count(filterData,callbackFn);
+
+    this.findCount = function (callbackFn) {
+        LogTemp.collection.count({}, callbackFn);
+
     }
 
     function buildFilter(filter) {
@@ -78,12 +96,13 @@ function LogService($config, $event, $logger) {
         }
         if (typeof filter.timeTo != "undefined" && filter.timeTo != null) {
             var dates = filter.timeTo.split("/");
-            timeRange['$lt'] = new Date(dates[2],dates[1]-1,dates[0],23,59,59);
+            timeRange['$lt'] = new Date(dates[2], dates[1] - 1, dates[0], 23, 59, 59);
             retVal.time = timeRange;
         }
         if (typeof filter.timeFrom != "undefined" && filter.timeFrom != null) {
             var dates = filter.timeFrom.split("/");
-            timeRange['$gte'] = new Date(dates[2],dates[1]-1,dates[0]);;
+            timeRange['$gte'] = new Date(dates[2], dates[1] - 1, dates[0]);
+            ;
             retVal.time = timeRange;
 
         }

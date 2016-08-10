@@ -1,7 +1,7 @@
 module.exports = HomeController;
-//var mongoose = require('mongoose').set('debug', true);
-//var Log = mongoose.model('Log');
-function HomeController($config, $event, $logger, $logService,$userService) {
+var mongoose = require('mongoose').set('debug', true);
+var Log = mongoose.model('Log');
+function HomeController($config, $event, $logger, $logService, $userService) {
     var self = this;
     this.index = function (io) {
         /*
@@ -29,10 +29,10 @@ function HomeController($config, $event, $logger, $logService,$userService) {
          }
          */
 //        io.echo($logService.get(1).name);
-//        $userService.create({fullName:'lapdx',userName:'admin',password:'123456'},function(err,data){
-//            console.log(data);
-//            console.log(err);
-//        });
+        $userService.create({fullName:'lapdx',userName:'admin',password:'123456'},function(err,data){
+            console.log(data);
+            console.log(err);
+        });
 //        $userService.update({fullName: 'lapdx'}, {fullName: 'Dam Xuan Lap'}, function (err, data) {
 //            console.log(err);
 //            console.log(data.result);
@@ -57,7 +57,18 @@ function HomeController($config, $event, $logger, $logService,$userService) {
 //            console.log(err);
 //            console.log(data);
 //        });
-        io.render("log/index",[{a:'a'}]);
+//        var datas = [];
+//        for (var i = 0, max = 500000; i < max; i++) {
+//            datas.push({userId: i, title: 'Bug undefined' + i, source: 'Chiaki', level: "error", meta: {ip: "192.168.1.111", device: "iphone", language: "PHP"}, data: {line: 20, fileName: "index.php"}});
+////            $logService.create({userId:i,title: 'Bug undefined'+i, source: 'Chiaki', level: "error", meta: {ip: "192.168.1.111", device: "iphone", language: "PHP"}, data: {line: 20, fileName: "index.php"}}, function (err, data) {
+//                console.log(i);
+////            });
+//        }
+//        Log.create(datas, function (err, logs) {
+//            console.log(logs);
+//            console.log(err);
+//        });
+        io.echo("ok");
     };
     this.broadcast = function (io) {
         var responseData = {

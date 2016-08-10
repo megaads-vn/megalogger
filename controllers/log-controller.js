@@ -21,10 +21,14 @@ function LogController($config, $event, $logger, $logService, $userService, $sou
                 var pageId = input.pageId;
                 input.metric = 'count';
                 $logService.find(input, function (err, countLog) {
+                    if (err) {
+                        console.log(err);
+                        return;
+                    }
                     var data = {};
                     data.status = 'successful';
                     data.logs = logs;
-                    data.pagesCount = recordsCountToPagesCount(countLog.length,pageSize);
+                    data.pagesCount = recordsCountToPagesCount(countLog, pageSize);
                     data.pageId = pageId;
                     return io.json(data);
                 });

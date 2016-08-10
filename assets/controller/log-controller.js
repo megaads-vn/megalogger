@@ -1,5 +1,5 @@
 megalog.controller("LogController", LogController);
-function LogController($scope, $http, $rootScope) {
+function LogController($scope, $http, $rootScope, $timeout) {
     //--------------------------------------------------------------------------
     $scope.sources = sources;
     $scope.filter = {
@@ -45,7 +45,7 @@ function LogController($scope, $http, $rootScope) {
         if (isReset) {
             $scope.filter.pageId = 0;
         }
-        var filterData = buildFilter();
+        var filterData = buildFilter(isReset);
         $scope.isFinding = true;
         $http.post("/log/find", filterData).success(function (data) {
             $scope.hideLoading();
@@ -61,7 +61,7 @@ function LogController($scope, $http, $rootScope) {
             $scope.isSaving = false;
         });
     };
-    $scope.find();
+    $scope.find(true);
     $scope.openDialog = function (log) {
         $scope.log = angular.copy(log);
         $scope.getLogDetail(true);
@@ -72,7 +72,7 @@ function LogController($scope, $http, $rootScope) {
             $scope.dialog.filter.pageId = 0;
         }
         $scope.dialog.filter.title = $scope.log._id.title;
-        var filterData = buildFilterDialog();
+        var filterData = buildFilterDialog(isReset);
         $http.post("/log/find", filterData).success(function (data) {
             $scope.hideLoading();
             $scope.isFinding = false;
@@ -94,9 +94,12 @@ function LogController($scope, $http, $rootScope) {
             pageId: 0
         };
         $scope.filter.source = $scope.sources[0];
-        $scope.find();
+        $scope.find(true);
+        $timeout(function () {
+            $('.selectpicker').selectpicker('refresh');
+        }, 1000);
     }
-    function buildFilter() {
+    function buildFilter(isReset) {
         var retVal = {
             pageId: $scope.filter.pageId,
             pageSize: $scope.filter.pageSize
@@ -122,11 +125,15 @@ function LogController($scope, $http, $rootScope) {
         if ($scope.filter.field != null) {
             retVal.field = $scope.baseController.stringToField($scope.filter.field);
         }
+        if (isReset || $scope.filter.isReset) {
+            retVal.out = 1;
+            delete($scope.filter.isReset);
+        }
 
 //        retVal.field = $scope.filter.keyword;
         return retVal;
     }
-    function buildFilterDialog() {
+    function buildFilterDialog(isReset) {
         var retVal = {
             pageId: $scope.dialog.filter.pageId,
             pageSize: $scope.dialog.filter.pageSize,
@@ -154,7 +161,10 @@ function LogController($scope, $http, $rootScope) {
         if ($scope.filter.userId != null) {
             retVal.userId = $scope.filter.userId;
         }
-
+        if (isReset) {
+            retVal.out = 1;
+        }
+        $scope.filter.isReset = 1;
         return retVal;
     }
     this.initialize( );

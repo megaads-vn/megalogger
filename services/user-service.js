@@ -1,12 +1,14 @@
 var BaseService = require(__dir + "/services/base-service");
 module.exports = new UserService();
 var mongoose = require('mongoose');
+var bcrypt = require("bcrypt-nodejs");
 var User = mongoose.model('User');
 var Schema = mongoose.Schema;
 var crypto = require('crypto'),
         algorithm = 'aes-256-ctr',
         password = 'mega-logger-3172NT';
 function UserService($config, $event, $logger) {
+    var self = this;
     this.baseService = this.__proto__ = new BaseService($config, $event, $logger);
     this.create = function (data, callbackFn) {
         buildSaveData(data);
@@ -75,7 +77,8 @@ function UserService($config, $event, $logger) {
     }
     ;
     function buildSaveData(data){
-        data.apiKey = encrypt(data.fullName + data.password + data.userName);
+        data.password = bcrypt.hashSync(data.password);
+        data.apiKey = self.baseService.encrypt(data.fullName + data.password + data.userName);
     }
 }
 
