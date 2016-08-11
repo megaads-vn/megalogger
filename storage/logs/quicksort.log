@@ -8149,3 +8149,2486 @@ Debug mode:  true
 Start time:  09/08/2016 17:11:40  
 Port:        2307  
 Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:26:40  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:26:58 GMT+0700 (ICT)] [error] Application: uncaughtException: userdatar is not defined  
+[Wed Aug 10 2016 16:26:58 GMT+0700 (ICT)] [error] Application: ReferenceError: userdatar is not defined
+    at /private/var/www/megalogger/network/mq-consumer.js:58:36
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:27:13  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:27:25 GMT+0700 (ICT)] [error] Application: uncaughtException: encrypt is not defined  
+[Wed Aug 10 2016 16:27:25 GMT+0700 (ICT)] [error] Application: ReferenceError: encrypt is not defined
+    at buildSaveData (/private/var/www/megalogger/services/user-service.js:78:23)
+    at BaseService.UserService.create (/private/var/www/megalogger/services/user-service.js:12:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:58:29
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:27:54  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:28:06 GMT+0700 (ICT)] [error] Application: uncaughtException: crypto is not a function  
+[Wed Aug 10 2016 16:28:06 GMT+0700 (ICT)] [error] Application: TypeError: crypto is not a function
+    at buildSaveData (/private/var/www/megalogger/services/user-service.js:78:23)
+    at BaseService.UserService.create (/private/var/www/megalogger/services/user-service.js:12:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:58:29
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:28:20  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:28:29 GMT+0700 (ICT)] [error] Application: uncaughtException: crypto.encrypt is not a function  
+[Wed Aug 10 2016 16:28:29 GMT+0700 (ICT)] [error] Application: TypeError: crypto.encrypt is not a function
+    at buildSaveData (/private/var/www/megalogger/services/user-service.js:78:30)
+    at BaseService.UserService.create (/private/var/www/megalogger/services/user-service.js:12:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:58:29
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:31:30  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:31:36 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'encrypt' of undefined  
+[Wed Aug 10 2016 16:31:36 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'encrypt' of undefined
+    at buildSaveData (/private/var/www/megalogger/services/user-service.js:78:39)
+    at BaseService.UserService.create (/private/var/www/megalogger/services/user-service.js:12:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:58:29
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:35:3  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:35:16 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'encrypt' of undefined  
+[Wed Aug 10 2016 16:35:16 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'encrypt' of undefined
+    at buildSaveData (/private/var/www/megalogger/services/user-service.js:79:25)
+    at BaseService.UserService.create (/private/var/www/megalogger/services/user-service.js:12:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:58:29
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:36:12  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:36:25 GMT+0700 (ICT)] [error] Application: uncaughtException: BaseService.encrypt is not a function  
+[Wed Aug 10 2016 16:36:25 GMT+0700 (ICT)] [error] Application: TypeError: BaseService.encrypt is not a function
+    at /private/var/www/megalogger/network/mq-consumer.js:58:40
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:38:41  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:39:21  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:39:26 GMT+0700 (ICT)] [error] Application: uncaughtException: this.baseService is not a function  
+[Wed Aug 10 2016 16:39:26 GMT+0700 (ICT)] [error] Application: TypeError: this.baseService is not a function
+    at buildSaveData (/private/var/www/megalogger/services/user-service.js:79:28)
+    at BaseService.UserService.create (/private/var/www/megalogger/services/user-service.js:12:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:58:29
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:41:14  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:43:53  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:52:34  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:53:26  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:54:44  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:55:53  
+Port:        2307  
+Debug mode:  true  
+[Wed Aug 10 2016 16:56:02 GMT+0700 (ICT)] [error] Application: uncaughtException: val.forEach is not a function  
+[Wed Aug 10 2016 16:56:02 GMT+0700 (ICT)] [error] Application: TypeError: val.forEach is not a function
+    at /private/var/www/megalogger/network/mq-consumer.js:62:29
+    at Array.forEach (native)
+    at /private/var/www/megalogger/network/mq-consumer.js:61:26
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/cursor.js:839:16
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:159:5)
+    at setCursorDeadAndNotified (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:501:3)
+    at nextFunction (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:652:7)
+    at Cursor.next [as _next] (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:693:3)
+    at fetchDocs (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/cursor.js:835:10)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/cursor.js:858:7
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:159:5)
+    at nextFunction (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:683:5)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:585:7
+    at queryCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:220:18)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:57:26  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 16:59:5  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:1:32  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:3:35  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:5:39  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:6:2  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:8:47  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:10:24  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:11:38  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:12:17  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:12:56  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:13:43  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:14:50  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:17:4  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:19:3  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:19:56  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  10/08/2016 17:20:27  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:25:41  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:31:18  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:35:3  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 09:35:09 GMT+0700 (ICT)] [error] Application: uncaughtException: alg is not defined  
+[Thu Aug 11 2016 09:35:09 GMT+0700 (ICT)] [error] Application: ReferenceError: alg is not defined
+    at /private/var/www/megalogger/network/mq-consumer.js:44:61
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:37:29  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:38:53  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 09:38:56 GMT+0700 (ICT)] [error] Application: uncaughtException: callback.apply is not a function  
+[Thu Aug 11 2016 09:38:56 GMT+0700 (ICT)] [error] Application: TypeError: callback.apply is not a function
+    at /private/var/www/megalogger/node_modules/jsonwebtoken/verify.js:27:18
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:39:15  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:42:42  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:43:24  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 9:50:53  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:9:54  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:10:19  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:17:13  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:19:40  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:20:7  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 10:20:11 GMT+0700 (ICT)] [error] Application: uncaughtException: invalid signature  
+[Thu Aug 11 2016 10:20:11 GMT+0700 (ICT)] [error] Application: JsonWebTokenError: invalid signature
+    at Object.module.exports [as verify] (/private/var/www/megalogger/node_modules/jsonwebtoken/verify.js:97:17)
+    at /private/var/www/megalogger/network/mq-consumer.js:53:34
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:25:10  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 10:25:16 GMT+0700 (ICT)] [error] Application: uncaughtException: invalid signature  
+[Thu Aug 11 2016 10:25:16 GMT+0700 (ICT)] [error] Application: JsonWebTokenError: invalid signature
+    at Object.module.exports [as verify] (/private/var/www/megalogger/node_modules/jsonwebtoken/verify.js:97:17)
+    at /private/var/www/megalogger/network/mq-consumer.js:53:34
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:25:56  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:26:14  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:31:33  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:32:12  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:32:44  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:35:48  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:37:46  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:38:22  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:39:53  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:50:10  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:50:34  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:50:51  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 10:50:53 GMT+0700 (ICT)] [error] Application: uncaughtException: Unexpected token o  
+[Thu Aug 11 2016 10:50:53 GMT+0700 (ICT)] [error] Application: SyntaxError: Unexpected token o
+    at Object.parse (native)
+    at /private/var/www/megalogger/network/mq-consumer.js:42:44
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 10:50:54 GMT+0700 (ICT)] [error] Application: uncaughtException: Unexpected token o  
+[Thu Aug 11 2016 10:50:54 GMT+0700 (ICT)] [error] Application: SyntaxError: Unexpected token o
+    at Object.parse (native)
+    at /private/var/www/megalogger/network/mq-consumer.js:42:44
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 10:53:38  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 10:53:38 GMT+0700 (ICT)] [error] Application: uncaughtException: body.forEach is not a function  
+[Thu Aug 11 2016 10:53:38 GMT+0700 (ICT)] [error] Application: TypeError: body.forEach is not a function
+    at /private/var/www/megalogger/network/mq-consumer.js:39:18
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 10:53:38 GMT+0700 (ICT)] [error] Application: uncaughtException: body.forEach is not a function  
+[Thu Aug 11 2016 10:53:38 GMT+0700 (ICT)] [error] Application: TypeError: body.forEach is not a function
+    at /private/var/www/megalogger/network/mq-consumer.js:39:18
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:2:42  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:4:24  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:15:7  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:16:1  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:24:27  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:24:56  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:28:33  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 11:29:07 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 11:29:08 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+[Thu Aug 11 2016 11:29:08 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 11:29:08 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:30:47  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 11:30:59 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 11:30:59 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:32:37  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:33:33  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 11:33:36 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 11:33:36 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+[Thu Aug 11 2016 11:34:13 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 11:34:13 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:34:19  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 11:36:07 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 11:36:07 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 11:49:58  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:53:8  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:53:23 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 13:53:23 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+[Thu Aug 11 2016 13:53:23 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 13:53:23 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onError (/private/var/www/node_modules/stompit/lib/Client.js:426:10)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:78:15)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:54:18  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:54:44  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:55:27  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:55:35 GMT+0700 (ICT)] [error] Application: uncaughtException: token is not defined  
+[Thu Aug 11 2016 13:55:35 GMT+0700 (ICT)] [error] Application: ReferenceError: token is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:60:29)
+    at /private/var/www/megalogger/network/mq-consumer.js:40:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:56:1  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:56:02 GMT+0700 (ICT)] [error] Application: uncaughtException: token is not defined  
+[Thu Aug 11 2016 13:56:02 GMT+0700 (ICT)] [error] Application: ReferenceError: token is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:29)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:56:04 GMT+0700 (ICT)] [error] Application: uncaughtException: token is not defined  
+[Thu Aug 11 2016 13:56:04 GMT+0700 (ICT)] [error] Application: ReferenceError: token is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:29)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:56:05 GMT+0700 (ICT)] [error] Application: uncaughtException: token is not defined  
+[Thu Aug 11 2016 13:56:05 GMT+0700 (ICT)] [error] Application: ReferenceError: token is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:29)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:56:54  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:56:54 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:56:54 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:56:55 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:56:55 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:56:55 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:56:55 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:56:57 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:56:57 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:57:32  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:57:32 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:83:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:58:5  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:05 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:58:34  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: uncaughtException: userdata is not defined  
+[Thu Aug 11 2016 13:58:34 GMT+0700 (ICT)] [error] Application: ReferenceError: userdata is not defined
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:82:24)
+    at /private/var/www/megalogger/network/mq-consumer.js:41:17
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:59:15  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 13:59:18  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:0:0  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:1:22  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:2:3  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:2:34  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:3:14  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:03:22 GMT+0700 (ICT)] [error] Application: uncaughtException: JSON.stringify(...).equals is not a function  
+[Thu Aug 11 2016 14:03:22 GMT+0700 (ICT)] [error] Application: TypeError: JSON.stringify(...).equals is not a function
+    at /private/var/www/megalogger/network/mq-consumer.js:76:33
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/cursor.js:839:16
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:159:5)
+    at setCursorNotified (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:511:3)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:582:16
+    at queryCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:220:18)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:3:47  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:4:27  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:5:3  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:5:25  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:05:29 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property '_id' of undefined  
+[Thu Aug 11 2016 14:05:29 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property '_id' of undefined
+    at /private/var/www/megalogger/network/mq-consumer.js:75:55
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/cursor.js:839:16
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:159:5)
+    at setCursorNotified (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:511:3)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:582:16
+    at queryCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js:220:18)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:5:47  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:6:48  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:7:33  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:9:58  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:10:54  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:11:47  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:12:52  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:14:28  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:15:08 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'length' of undefined  
+[Thu Aug 11 2016 14:15:08 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'length' of undefined
+    at /private/var/www/megalogger/controllers/log-controller.js:27:72
+    at /private/var/www/megalogger/node_modules/mongoose/lib/model.js:3324:16
+    at /private/var/www/megalogger/node_modules/mongoose/lib/aggregate.js:579:15
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/collection.js:2556:7
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/db.js:306:20
+    at commandCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:1187:46)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+[Thu Aug 11 2016 14:16:19 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'length' of undefined  
+[Thu Aug 11 2016 14:16:19 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'length' of undefined
+    at /private/var/www/megalogger/controllers/log-controller.js:27:72
+    at /private/var/www/megalogger/node_modules/mongoose/lib/model.js:3324:16
+    at /private/var/www/megalogger/node_modules/mongoose/lib/aggregate.js:579:15
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/collection.js:2556:7
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/db.js:306:20
+    at commandCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:1187:46)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+[Thu Aug 11 2016 14:16:23 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'length' of undefined  
+[Thu Aug 11 2016 14:16:23 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'length' of undefined
+    at /private/var/www/megalogger/controllers/log-controller.js:27:72
+    at /private/var/www/megalogger/node_modules/mongoose/lib/model.js:3324:16
+    at /private/var/www/megalogger/node_modules/mongoose/lib/aggregate.js:579:15
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/collection.js:2556:7
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/db.js:306:20
+    at commandCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:1187:46)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+[Thu Aug 11 2016 14:16:33 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'length' of undefined  
+[Thu Aug 11 2016 14:16:33 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'length' of undefined
+    at /private/var/www/megalogger/controllers/log-controller.js:27:72
+    at /private/var/www/megalogger/node_modules/mongoose/lib/model.js:3324:16
+    at /private/var/www/megalogger/node_modules/mongoose/lib/aggregate.js:579:15
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/collection.js:2556:7
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/db.js:306:20
+    at commandCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:1187:46)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+[Thu Aug 11 2016 14:16:52 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'length' of undefined  
+[Thu Aug 11 2016 14:16:52 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'length' of undefined
+    at /private/var/www/megalogger/controllers/log-controller.js:27:72
+    at /private/var/www/megalogger/node_modules/mongoose/lib/model.js:3324:16
+    at /private/var/www/megalogger/node_modules/mongoose/lib/aggregate.js:579:15
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/collection.js:2556:7
+    at handleCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/utils.js:96:12)
+    at /private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/lib/db.js:306:20
+    at commandCallback (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:1187:46)
+    at Callbacks.emit (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:119:3)
+    at null.messageHandler (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js:358:23)
+    at Socket.<anonymous> (/private/var/www/megalogger/node_modules/mongoose/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js:292:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:536:20)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:21:50  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:23:4  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:04 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:05 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:05 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:05 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:05 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:05 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:05 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:07 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:07 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:09 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:09 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:14 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:14 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:25 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:25 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:23:45 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:23:45 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:24:15 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:24:15 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:24:45 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:24:45 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:25:15 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:25:15 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:25:45 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:25:45 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:26:6  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:06 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:07 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:07 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:07 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:07 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:09 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:09 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:11 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:11 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:16 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:16 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 14:26:27 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 14:26:27 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Socket.<anonymous> (/private/var/www/node_modules/stompit/lib/Socket.js:48:10)
+    at emitOne (events.js:82:20)
+    at Socket.emit (events.js:169:7)
+    at emitErrorNT (net.js:1269:8)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:26:30  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:29:10  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:32:50  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:32:50 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'id' of undefined  
+[Thu Aug 11 2016 14:32:50 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'id' of undefined
+    at Client.subscribe (/private/var/www/node_modules/stompit/lib/Client.js:233:19)
+    at /private/var/www/megalogger/network/mq-consumer.js:23:20
+    at onConnected (/private/var/www/node_modules/stompit/lib/ConnectFailover.js:264:7)
+    at Client.onConnected (/private/var/www/node_modules/stompit/lib/Client.js:149:9)
+    at emitOne (events.js:77:13)
+    at Client.emit (events.js:169:7)
+    at Client.<anonymous> (/private/var/www/node_modules/stompit/lib/Client.js:398:10)
+    at /private/var/www/node_modules/stompit/lib/Client.js:356:18
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:463:5)
+    at IncomingFrame.g (events.js:260:16)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:33:50  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 14:33:50 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'id' of undefined  
+[Thu Aug 11 2016 14:33:50 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'id' of undefined
+    at Client.subscribe (/private/var/www/node_modules/stompit/lib/Client.js:233:19)
+    at /private/var/www/megalogger/network/mq-consumer.js:24:20
+    at onConnected (/private/var/www/node_modules/stompit/lib/ConnectFailover.js:264:7)
+    at Client.onConnected (/private/var/www/node_modules/stompit/lib/Client.js:149:9)
+    at emitOne (events.js:77:13)
+    at Client.emit (events.js:169:7)
+    at Client.<anonymous> (/private/var/www/node_modules/stompit/lib/Client.js:398:10)
+    at /private/var/www/node_modules/stompit/lib/Client.js:356:18
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:463:5)
+    at IncomingFrame.g (events.js:260:16)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:34:22  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:36:32  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 14:41:39  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:3:22  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:03:53 GMT+0700 (ICT)] [error] Application: uncaughtException: r is not defined  
+[Thu Aug 11 2016 15:03:53 GMT+0700 (ICT)] [error] Application: ReferenceError: r is not defined
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:81:23)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:4:16  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:4:49  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:5:19  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:21:3  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:21:08 GMT+0700 (ICT)] [error] Application: uncaughtException: KJUR is not defined  
+[Thu Aug 11 2016 15:21:08 GMT+0700 (ICT)] [error] Application: ReferenceError: KJUR is not defined
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:79:23)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:22:8  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:22:11 GMT+0700 (ICT)] [error] Application: uncaughtException: jsrsasign.verify is not a function  
+[Thu Aug 11 2016 15:22:11 GMT+0700 (ICT)] [error] Application: TypeError: jsrsasign.verify is not a function
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:79:33)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:24:56  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:25:00 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'verifyJWT' of undefined  
+[Thu Aug 11 2016 15:25:00 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'verifyJWT' of undefined
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:79:36)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:26:6  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:26:11 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'verify' of undefined  
+[Thu Aug 11 2016 15:26:11 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'verify' of undefined
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:79:36)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:28:39  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:29:33  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:31:5  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:31:35  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:35:0  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:36:10  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:36:16 GMT+0700 (ICT)] [error] Application: uncaughtException: Cannot read property 'get' of undefined  
+[Thu Aug 11 2016 15:36:16 GMT+0700 (ICT)] [error] Application: TypeError: Cannot read property 'get' of undefined
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:83:48)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:61:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:36:33  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:36:57  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:39:19  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:40:37  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:40:42 GMT+0700 (ICT)] [error] Application: uncaughtException: a.match is not a function  
+[Thu Aug 11 2016 15:40:42 GMT+0700 (ICT)] [error] Application: TypeError: a.match is not a function
+    at Object.KJUR.jws.IntDate.get (/private/var/www/megalogger/node_modules/jsrsasign/lib/jsrsasign.js:288:7810)
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:84:45)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:62:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+[Thu Aug 11 2016 15:40:47 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:40:47 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 15:40:47 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:40:47 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onUnknownCommand [as _unknownCommandHandler] (/private/var/www/node_modules/stompit/lib/Client.js:463:8)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:81:35)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+[Thu Aug 11 2016 15:41:06 GMT+0700 (ICT)] [error] Application: uncaughtException: a.match is not a function  
+[Thu Aug 11 2016 15:41:06 GMT+0700 (ICT)] [error] Application: TypeError: a.match is not a function
+    at Object.KJUR.jws.IntDate.get (/private/var/www/megalogger/node_modules/jsrsasign/lib/jsrsasign.js:288:7810)
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:84:45)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:62:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:43:48  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:44:33  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:45:08 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:45:08 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 15:45:08 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:45:08 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onUnknownCommand [as _unknownCommandHandler] (/private/var/www/node_modules/stompit/lib/Client.js:463:8)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:81:35)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)  
+[Thu Aug 11 2016 15:46:10 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:46:10 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 15:46:10 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:46:10 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at Client.onUnknownCommand [as _unknownCommandHandler] (/private/var/www/node_modules/stompit/lib/Client.js:463:8)
+    at Socket.readFrameBody (/private/var/www/node_modules/stompit/lib/Socket.js:81:35)
+    at IncomingFrameStream.Socket.readIncomingFrame (/private/var/www/node_modules/stompit/lib/Socket.js:101:5)
+    at emitNone (events.js:67:13)
+    at IncomingFrameStream.emit (events.js:166:7)
+    at emitReadable_ (_stream_readable.js:419:10)
+    at emitReadable (_stream_readable.js:413:7)
+    at readableAddChunk (_stream_readable.js:164:13)
+    at IncomingFrameStream.Readable.push (_stream_readable.js:111:10)
+    at IncomingFrameStream.Transform.push (_stream_transform.js:128:32)
+    at IncomingFrameStream._beginBody (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:292:10)
+    at IncomingFrameStream._parseHeaderLine (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:237:17)
+    at IncomingFrameStream._continueTransform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:111:12)
+    at IncomingFrameStream._transform (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:102:8)
+    at IncomingFrameStream.Transform._read (_stream_transform.js:167:10)
+    at IncomingFrameStream.Transform._write (_stream_transform.js:155:12)
+    at doWrite (_stream_writable.js:300:12)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:48:12  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:50:1  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:50:34  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:56:56 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 15:56:56 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:58:19  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 15:58:32 GMT+0700 (ICT)] [error] Application: uncaughtException: KJUR is not defined  
+[Thu Aug 11 2016 15:58:32 GMT+0700 (ICT)] [error] Application: ReferenceError: KJUR is not defined
+    at verifyTokenPureJS (/private/var/www/megalogger/network/mq-consumer.js:84:23)
+    at writeToLog (/private/var/www/megalogger/network/mq-consumer.js:62:9)
+    at /private/var/www/megalogger/network/mq-consumer.js:31:25
+    at IncomingFrame.<anonymous> (/private/var/www/node_modules/stompit/lib/IncomingFrameStream.js:488:5)
+    at emitNone (events.js:72:20)
+    at IncomingFrame.emit (events.js:166:7)
+    at endReadableNT (_stream_readable.js:921:12)
+    at nextTickCallbackWith2Args (node.js:442:9)
+    at process._tickCallback (node.js:356:17)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:58:50  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:59:19  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 15:59:43  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:2:40  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:04:48 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:04:48 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:5:8  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:5:52  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:06:28 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:06:28 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:6:55  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:7:23  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:7:45  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:07:50 GMT+0700 (ICT)] [error] Application: uncaughtException: undefined  
+[Thu Aug 11 2016 16:07:50 GMT+0700 (ICT)] [error] Application:   
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:10:15  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:13:38  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:15:7  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:17:20  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:17:42  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:18:38 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:18:38 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:24:27  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:25:20  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:29:05 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:29:05 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 16:30:26 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:30:26 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 16:32:59 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:32:59 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 16:37:10 GMT+0700 (ICT)] [error] Application: uncaughtException: undefined is not a function  
+[Thu Aug 11 2016 16:37:10 GMT+0700 (ICT)] [error] Application: TypeError: undefined is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:38:10  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:38:26  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:46:05 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:46:05 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:50:14  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:50:39  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:51:0  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:53:02 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:53:02 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:53:20  
+Port:        2307  
+Debug mode:  true  
+[Thu Aug 11 2016 16:56:14 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:56:14 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+[Thu Aug 11 2016 16:57:41 GMT+0700 (ICT)] [error] Application: uncaughtException: this._subscriptions[key].processMessageFrame is not a function  
+[Thu Aug 11 2016 16:57:41 GMT+0700 (ICT)] [error] Application: TypeError: this._subscriptions[key].processMessageFrame is not a function
+    at Client._onDestroyed (/private/var/www/node_modules/stompit/lib/Client.js:69:30)
+    at Client.Socket.destroy (/private/var/www/node_modules/stompit/lib/Socket.js:142:12)
+    at null._repeat (/private/var/www/node_modules/stompit/lib/Socket.js:237:14)
+    at wrapper [as _onTimeout] (timers.js:275:11)
+    at Timer.listOnTimeout (timers.js:92:15)  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 16:59:46  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 17:2:39  
+Port:        2307  
+Debug mode:  true  
+===========================================================  
+  
+  /|| ||\ | ||  Quicksort.io - version 0.7.1  
+ /_|| ||_| \||  https://github.com/megaads-vn  
+  
+Start time:  11/08/2016 17:3:49  
+Port:        2307  
+Debug mode:  true  

@@ -15,6 +15,7 @@ var serviceContainer = require(__dir + "/core/ioc-container/service-container");
 var serviceProviderRegister = require(__dir + "/config/service-providers");
 var event = require(__dir + "/core/app/event");
 var viewEngineFactory = require(__dir + "/core/io/view/engine-factory");
+var consumer = require(__dir + "/network/mq-consumer");
 /** Exports **/
 module.exports = new Application();
 /** Modules **/
@@ -50,6 +51,8 @@ function Application() {
         httpServer.listen(config.get("app.port"), sessionManager);
         // Fire event
         event.fire("system.booted");
+        //Start consumer to listen ActiveMQ
+        consumer.connect();
     }
     function handleExceptions() {
         process.on("uncaughtException", function (err) {

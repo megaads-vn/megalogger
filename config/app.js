@@ -7,7 +7,7 @@ module.exports = {
         "/entities",
         "/start",
         "/services",
-        "/network"
+ //       "/network"
 //        "/models"
     ],
     assetPath: "/assets",

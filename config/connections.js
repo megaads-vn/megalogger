@@ -6,7 +6,8 @@ module.exports = {
         'connectHeaders':{
             'host': '',
             'login': '',
-            'passcode': ''
+            'passcode': '',
+            'heart-beat': '5000,5000'
         }
     },
     backupServer: {
@@ -18,5 +19,6 @@ module.exports = {
             'login': '',
             'passcode': ''
         }
-    }
+    },
+    reconnectOptions: {'maxReconnects': 10}
 };

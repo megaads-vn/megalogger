@@ -38,7 +38,6 @@ function UserService($config, $event, $logger) {
         delete filterData.pageId;
         var pagination = this.baseService.buildPaginationQuery(filter);
         User.collection.find(filterData, null, pagination).toArray(callbackFn);
-
     };
 
     function buildFilter(filter) {
@@ -57,7 +56,6 @@ function UserService($config, $event, $logger) {
         if (typeof filter.timeFrom != "undefined" && filter.timeFrom != null) {
             timeRange.$gte = filter.timeFrom;
             retVal.createTime = timeRange;
-
         }
         if (typeof filter.userName != "undefined" && filter.userName != null) {
             retVal.userName = filter.userName;
@@ -71,9 +69,12 @@ function UserService($config, $event, $logger) {
         if (typeof filter.pageId != "undefined" && filter.pageId != null) {
             retVal.pageId = filter.pageId;
         }
+        if(typeof filter.apiKey !== "undefined" && filter.apiKey != null){
+            retVal.apiKey = filter.apiKey;
+        }
         return retVal;
-    }
-    ;
+    };
+
     function buildSaveData(data, isCreate) {
         data.password = bcrypt.hashSync(data.password);
         if (isCreate) {
