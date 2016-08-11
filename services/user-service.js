@@ -2,22 +2,20 @@ var BaseService = require(__dir + "/services/base-service");
 module.exports = new UserService();
 var mongoose = require('mongoose');
 var bcrypt = require("bcrypt-nodejs");
+var randomstring = require("randomstring");
 var User = mongoose.model('User');
 var Schema = mongoose.Schema;
-var crypto = require('crypto'),
-        algorithm = 'aes-256-ctr',
-        password = 'mega-logger-3172NT';
 function UserService($config, $event, $logger) {
     var self = this;
     this.baseService = this.__proto__ = new BaseService($config, $event, $logger);
     this.create = function (data, callbackFn) {
-        buildSaveData(data);
+        buildSaveData(data, true);
         var user = new User(data);
         user.save(callbackFn);
 
     };
     this.update = function (query, data, callbackFn) {
-        buildSaveData(data);
+        buildSaveData(data, false);
         User.collection.update(query, {$set: data}, {multi: true}, callbackFn);
     };
     this.delete = function (conditions, callbackFn) {
@@ -39,8 +37,8 @@ function UserService($config, $event, $logger) {
         delete filterData.pageSize;
         delete filterData.pageId;
         var pagination = this.baseService.buildPaginationQuery(filter);
-        User.collection.find(filterData,null,pagination).toArray(callbackFn);
-        
+        User.collection.find(filterData, null, pagination).toArray(callbackFn);
+
     };
 
     function buildFilter(filter) {
@@ -76,9 +74,11 @@ function UserService($config, $event, $logger) {
         return retVal;
     }
     ;
-    function buildSaveData(data){
+    function buildSaveData(data, isCreate) {
         data.password = bcrypt.hashSync(data.password);
-        data.apiKey = self.baseService.encrypt(data.fullName + data.password + data.userName);
+        if (isCreate) {
+            data.apiKey = randomstring.generate(10);
+        }
     }
 }
 
