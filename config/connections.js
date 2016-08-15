@@ -1,7 +1,7 @@
 module.exports = {
-    mongoConnectionString:'mongodb://192.168.1.172:27017/megalogger',
+    mongoConnectionString:'mongodb://127.0.0.1:27017/megalogger',
     primaryServer: {
-        'host': '192.168.1.172',
+        'host': '127.0.0.1',
         'port': 61613,
         'connectHeaders':{
             'host': '',
@@ -11,13 +11,13 @@ module.exports = {
         }
     },
     backupServer: {
-        'host': '192.168.1.172',
+        'host': '127.0.0.1',
         'port': 61613,
-        'connectHeaders':{
-            'heart-beat': '5000,5000',
+        'connectHeaders':{            
             'host': '',
             'login': '',
-            'passcode': ''
+            'passcode': '',
+            'heart-beat': '5000,5000'
         }
     },
     reconnectOptions: {'maxReconnects': 10}
