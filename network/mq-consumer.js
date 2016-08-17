@@ -85,7 +85,7 @@ function MqConsumer(){
 
     function verifyTokenPureJS(token){
         var retVal = {};
-        var isValid = jsrsasign.jws.JWS.verifyJWT(token,'megadev_secret', {
+        var isValid = jsrsasign.jws.JWS.verifyJWT(token,'megalogger', {
             alg: ['HS512'],
         });
         if(isValid){
@@ -103,7 +103,7 @@ function MqConsumer(){
 
     function verifyToken(token){
         var retVal = {};
-        var isValid = jwt.verify(token, 'megadev_secret', {alg: ['HS512']});
+        var isValid = jwt.verify(token, 'megalogger', {alg: ['HS512']});
         if(isValid){
             retVal.aud = isValid.aud;
         }
