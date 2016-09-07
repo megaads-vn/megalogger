@@ -8,7 +8,7 @@ function LogService($config, $event, $logger) {
     this.baseService = this.__proto__ = new BaseService($config, $event, $logger);
     this.create = function (logData, callbackFn) {
 //        var bug = new Log({title: 'Bug undefined', source: 'Chiaki', level: "error", meta: {ip: "192.168.1.111", device: "iphone", language: "PHP"}, data: {line: 20, fileName: "index.php"}});
-        processSource(logData.source, function () {
+            processSource(logData.source, function () {
             var bug = new Log(logData);
             bug.save(callbackFn);
         });
@@ -42,10 +42,12 @@ function LogService($config, $event, $logger) {
             {$sort:{time:-1}}
         ];
         if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
-            query.push({"$group": {
+            query.push({
+                "$group": {
                     _id: {level: "$level", title: "$title"},
                     total: {"$sum": 1}
-                }});
+                }
+            });
         }
         if (typeof filter.metric =='undefined' || filter.metric !='count') {
             query.push({$skip: pagination.skip});
@@ -53,17 +55,41 @@ function LogService($config, $event, $logger) {
         }
         Log.aggregate(query, callbackFn);
     };
+
+    this.count = function(filter, callbackFn){
+        var filterData = buildFilter(filter);
+        delete filterData.pageSize;
+        delete filterData.pageId;
+        var query = [
+            {$match: filterData}
+        ];
+        if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
+            query.push({
+                $group: {
+                    _id: {level: "$level", title: "$title"}
+                }
+            });
+        }
+        query.push({
+            $group: {
+                _id: null,
+                count: { $sum: 1 }
+            }
+        });
+        return Log.aggregate(query, callbackFn);
+    };
     
+
     this.findCount = function(filter,callbackFn){
         var filterData = buildFilter(filter);
         delete filterData.pageSize;
-        delete filterData.pageId;       
+        delete filterData.pageId;
         Log.collection.count(filterData,callbackFn);
-    }
+    };
 
     function buildFilter(filter) {
         var retVal = {
-            pageSize: 20,
+            pageSize: 200,
             pageId: 0
         };
         var timeRange = {};
@@ -83,7 +109,7 @@ function LogService($config, $event, $logger) {
         }
         if (typeof filter.timeFrom != "undefined" && filter.timeFrom != null) {
             var dates = filter.timeFrom.split("/");
-            timeRange['$gte'] = new Date(dates[2],dates[1]-1,dates[0]);;
+            timeRange['$gte'] = new Date(dates[2],dates[1]-1,dates[0]);
             retVal.time = timeRange;
 
         }

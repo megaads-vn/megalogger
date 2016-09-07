@@ -1,0 +1,79 @@
+<div id="logDetail"
+     class="modal fade"
+     role="dialog">
+    <div class="modal-dialog" style="width:1200px; height:500px">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Title: {{log._id.title}}
+                    <span style="text-align: right; display: inline; overflow: visible;"  class="{{log._id.level}} logger ellipsis"></span></h4>
+            </div>
+            <div class="modal-body">
+                <div class="jscroll">
+                <table class="table table-hover table-bordered" style="margin-bottom: -1px;">
+                    <thead>
+                    <tr role="tbl-header">
+                        <th style="width: 10%">
+                            Thời gian
+                        </td>
+                        <th style="width: 65%">
+                            Data
+                        </th>
+                        <th style="width: 5%">
+                            Language
+                        </th>
+                        <th style="width: 5%">
+                            Device
+                        </th>
+                        <th style="width: 10%">
+                            IP
+                        </th>
+                    </tr>
+                    </thead>
+                        <tbody>
+                        <tr ng-repeat="log in dialog.logs">
+                            <td>
+                                {{formatDate(log.time)}}
+                            </td>
+
+                            <td>
+                                <div class="log-data">{{log.data}}</div>
+                            </td>
+                            <td>
+                                {{log.meta.language}}
+                            </td>
+                            <td>
+                                {{log.meta.device}}
+                            </td>
+                            <td>
+                                {{log.meta.ip}}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <nav aria-label="Page navigation" role="pop-pagination">
+                            <ul class="pagination" ng-show="dialog.pagesCount > 1"
+                                ng-init="steps = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]">
+                                <li class="{{step == 0 ? 'active' : ''}}" ng-repeat="step in steps" ng-click="$parent.dialog.filter.pageId = $parent.dialog.filter.pageId + step;
+                                        $parent.getLogDetail()"
+                                    ng-show="$parent.dialog.filter.pageId + step >= 0 && $parent.dialog.filter.pageId + step < $parent.dialog.pagesCount">
+                                    <a>
+                                        <span aria-hidden="true">{{$parent.dialog.filter.pageId + step + 1}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

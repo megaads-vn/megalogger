@@ -9,28 +9,46 @@ function LogController($config, $event, $logger, $logService, $userService, $sou
         });
     };
     this.find = function (io) {
+        var data = {};
         var input = io.inputs;
         $logService.find(input, function (err, logs) {
-            var data = {};
             if (err) {
-                data.status = 'fail';
-                data.message = err;
-                return io.json(data);
+                io.json(self._getFailStatus(err.message));
             } else {
-                var pageSize = input.pageSize;
-                var pageId = input.pageId;
-                input.metric = 'count';
-                $logService.find(input, function (err, countLog) {
-                    var data = {};
-                    data.status = 'successful';
-                    data.logs = logs;
-                    data.pagesCount = recordsCountToPagesCount(countLog.length,pageSize);
-                    data.pageId = pageId;
-                    return io.json(data);
+                data = {
+                    logs: logs,
+                    pageId: input.pageId
+                };
+                $logService.count(input, function (err, countArr) {
+                    if(err){
+                        io.json(self._getFailStatus(err.message));
+                    }else{
+                        data.pagesCount = recordsCountToPagesCount(countArr[0].count,input.pageSize);
+                        io.json(self._getSuccessStatus(data));
+                    }
                 });
             }
         });
     };
+
+    this.getPagesCount = function(){
+        var pageSize = input.pageSize;
+        var input = io.inputs;
+    };
+
+    this._getSuccessStatus = function (data) {
+        return {
+            status: 'successful',
+            result: data
+        }
+    };
+    this._getFailStatus = function (message) {
+        return {
+            status: 'fail',
+            message: message
+        };
+    };
+
 
     function recordsCountToPagesCount(recordsCount, pageSize) {
         var retVal = Math.ceil((recordsCount / pageSize));

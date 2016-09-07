@@ -29,6 +29,7 @@
     "ejs": "2.*",
     "lru-cache": "*",
     "mongodb": "^2.2.5",
+    "mongoose": "^4.6.0",
     "socket.io": "1.*"
   }
 }
