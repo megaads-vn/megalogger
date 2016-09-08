@@ -8,12 +8,6 @@ and open the template in the editor.
     Author     : Manh Ha Hoang
 */
 @import "../fonts/awesome/font-awesome.css";
-@import "icon.css";
-
-@import "bootstrap.css";
-@import "bootstrap-select.css";
-@import "bootstrap-datetimepicker.css";
-
 * {
     position: relative;
     font-family: Arial, sans-serif;
@@ -276,7 +270,7 @@ footer {
     background-color: #f5f5f5;
 }
 .jscroll {
-    height: 300px;
+    height: 500px;
     overflow: auto;
 }
 [role="tbl-header"] th {

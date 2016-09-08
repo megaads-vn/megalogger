@@ -5,16 +5,12 @@
         var sources = <%- JSON.stringify(sources) %>;
 //    </script>
     <body ng-app="megalog">
-    <controller ng-controller="LogController">
+    <controller ng-controller="LogController" ng-cloak>
         <header role="header">
             <%- include('../common/nav') -%>
         </header>
-        <main role="main">
+        <main ng-cloak>
             <div class="container">
-<!--                <div class="alert alert-success alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    Đừng thở dài hãy vươn vai mà sống. Bùn dưới chân nhưng nắng ở trên đầu.
-                </div>-->
                 <div id="filter">
                     <%- include('filter') -%>
                 </div>
@@ -28,10 +24,14 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </main>
 
+
         <%- include('../common/footer') -%>
+        <%- include('modal') -%>
         <script src="/controller/log-controller.js" type="text/javascript"></script>
     </controller>
 

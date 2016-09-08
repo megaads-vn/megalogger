@@ -25,7 +25,9 @@
             <div class="col-sm-10">
                 <select class="selectpicker" ng-model="filter.level" ng-change="find(true)">
                     <option value="">Choose Level</option>
-                    <option ng-repeat="item in levels" class="{{item.class}} logger ellipsis" value="{{item.value}}">{{item.name}}</option>
+                    <option ng-repeat="item in levels"
+                            class="{{item.class}} logger ellipsis"
+                            value="{{item.value}}">{{item.name}}</option>
                 </select>
             </div>
         </div>
@@ -34,7 +36,10 @@
     <div class="col-md-4">
         <div class="form-group">
             <div class="input-group date">
-                <input type="text" placeholder="Time From" class="form-control datepicker" ng-model="filter.timeFrom" ng-change="find(true)" />
+                <input type="text"
+                       placeholder="Time From"
+                       class="form-control datepicker"
+                       ng-model="filter.timeFrom" ng-change="find(true)" />
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -44,7 +49,11 @@
     <div class="col-md-4">
         <div class="form-group">
             <div class="input-group date">
-                <input type="text" placeholder="Time To" class="form-control datepicker" ng-model="filter.timeTo" ng-change="find(true)"/>
+                <input type="text"
+                       placeholder="Time To"
+                       class="form-control datepicker"
+                       ng-model="filter.timeTo"
+                       ng-change="find(true)"/>
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -56,6 +65,10 @@
     <div class="form-group container-fluid">
         <button class="btn btn-primary" ng-click="find(true)">Find</button>
         <button class="btn btn-warning" ng-click="reset()">Reset</button>
+        <img src="/images/ajax-loading.gif"
+             ng-show="isFinding"
+             alt="loading"
+             style="height: 32px"/>
     </div>
     <div class="clear"></div>
 </form>

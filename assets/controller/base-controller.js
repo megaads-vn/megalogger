@@ -611,7 +611,12 @@ function BaseController($scope, $http, $rootScope) {
     
     $scope.formatDate = function(stringDate){
         var date = new Date(stringDate);
-        return (((date.getDate()+100)+'').substring(1,4)) + '/' + (((date.getMonth() + 101)+'').substring(1,4)) + '/' +  date.getFullYear();
+        return (((date.getDate()+100)+'').substring(1,4)) + '/'
+            + (((date.getMonth() + 101)+'').substring(1,4))
+            + '/' +  date.getFullYear()
+            + ' ' + date.getHours()
+            + ':' + date.getMinutes()
+            + ':' + date.getSeconds();
     }
 
 }
