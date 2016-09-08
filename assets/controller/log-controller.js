@@ -8,11 +8,11 @@ function LogController($scope, $http, $rootScope, $timeout) {
     };
     $scope.dialog = {
         filter: {
-            pageSize: 4,
+            pageSize: 10,
             pageId: 0
         },
         logs: []
-    }
+    };
     $scope.levels = [
         {name: "Critical", value: "critical", class: "critical"},
         {name: "Error", value: "error", class: "error"},
@@ -37,9 +37,15 @@ function LogController($scope, $http, $rootScope, $timeout) {
     //  Initialize
     $scope.baseController = this.__proto__ = new BaseController($scope, $http, $rootScope);
     this.initialize = function ( ) {
+        var today = new Date();
+        var currentDate = today.getDate() + '/' +  parseInt(today.getMonth() + 1) + '/' + today.getFullYear();
         $(".datepicker").datepicker({
             dateFormat: "dd/mm/yy"
         });
+        $scope.filter.timeFrom = currentDate;
+        $(".datepicker").val(currentDate);
+        $scope.find();
+
     };
     $scope.find = function (isReset) {
         if (isReset) {
@@ -51,17 +57,17 @@ function LogController($scope, $http, $rootScope, $timeout) {
             $scope.hideLoading();
             $scope.isFinding = false;
             if (data.status == "successful") {
-                $scope.logs = data.logs;
-                $scope.filter.pageId = data.pageId;
-                $scope.pagesCount = data.pagesCount;
+                $scope.logs = data.result.logs;
+                $scope.filter.pageId = data.result.pageId;
+                $scope.pagesCount = data.result.pagesCount;
             }
         }).error(function () {
             $scope.hideLoading();
-            alert("Không thể tải danh sách, vui lòng thử lại hoặc liên hệ bộ phận kỹ thuật để được hỗ trợ.");
-            $scope.isSaving = false;
+            //alert("Không thể tải danh sách, vui lòng thử lại hoặc liên hệ bộ phận kỹ thuật để được hỗ trợ.");
+            $scope.isFinding = false;
         });
     };
-    $scope.find(true);
+
     $scope.openDialog = function (log) {
         $scope.log = angular.copy(log);
         $scope.getLogDetail(true);
@@ -77,17 +83,29 @@ function LogController($scope, $http, $rootScope, $timeout) {
             $scope.hideLoading();
             $scope.isFinding = false;
             if (data.status == "successful") {
-                $scope.dialog.logs = data.logs;
-                $scope.dialog.filter.pageId = data.pageId;
-                $scope.dialog.pagesCount = data.pagesCount;
+                $scope.dialog.logs = data.result.logs;
+                $scope.dialog.filter.pageId = data.result.pageId;
+                $scope.dialog.pagesCount = data.result.pagesCount;
+                jsonView();
                 $scope.baseController.openDialogModal("#logDetail");
             }
         }).error(function () {
             $scope.hideLoading();
-            alert("Không thể tải danh sách, vui lòng thử lại hoặc liên hệ bộ phận kỹ thuật để được hỗ trợ.");
-            $scope.isSaving = false;
+            //alert("Không thể tải danh sách, vui lòng thử lại hoặc liên hệ bộ phận kỹ thuật để được hỗ trợ.");
+            $scope.isFinding = false;
         });
+    };
+
+    function jsonView(){
+        setTimeout(function(){
+            $(".log-data").each(function(){
+                var jsonText = $(this).text();
+                $(this).JSONView(jsonText, { collapsed: true, nl2br: true, recursive_collapser: true });
+            })
+        },200);
     }
+
+
     $scope.reset = function () {
         $scope.filter = {
             pageSize: 20,
@@ -99,6 +117,7 @@ function LogController($scope, $http, $rootScope, $timeout) {
             $('.selectpicker').selectpicker('refresh');
         }, 1000);
     }
+
     function buildFilter(isReset) {
         var retVal = {
             pageId: $scope.filter.pageId,

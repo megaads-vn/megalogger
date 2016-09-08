@@ -43,10 +43,12 @@ function LogService($config, $event, $logger) {
             {$sort: {time: 1}}
         ];
         if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
-            query.push({"$group": {
+            query.push({
+                "$group": {
                     _id: {level: "$level", title: "$title"},
                     total: {"$sum": 1}
-                }});
+                }
+            });
         }
         if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
             query.push({$skip: pagination.skip});
@@ -74,10 +76,36 @@ function LogService($config, $event, $logger) {
         }
     };
 
-    this.findCount = function (callbackFn) {
-        LogTemp.collection.count({}, callbackFn);
+    this.count = function(filter, callbackFn){
+        var filterData = buildFilter(filter);
+        delete filterData.pageSize;
+        delete filterData.pageId;
+        var query = [
+            {$match: filterData}
+        ];
+        if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
+            query.push({
+                $group: {
+                    _id: {level: "$level", title: "$title"}
+                }
+            });
+        }
+        query.push({
+            $group: {
+                _id: null,
+                count: { $sum: 1 }
+            }
+        });
+        return Log.aggregate(query, callbackFn);
+    };
+    
 
-    }
+    this.findCount = function(filter,callbackFn){
+        var filterData = buildFilter(filter);
+        delete filterData.pageSize;
+        delete filterData.pageId;
+        Log.collection.count(filterData,callbackFn);
+    };
 
     function buildFilter(filter) {
         var retVal = {
@@ -102,7 +130,6 @@ function LogService($config, $event, $logger) {
         if (typeof filter.timeFrom != "undefined" && filter.timeFrom != null) {
             var dates = filter.timeFrom.split("/");
             timeRange['$gte'] = new Date(dates[2], dates[1] - 1, dates[0]);
-            ;
             retVal.time = timeRange;
 
         }

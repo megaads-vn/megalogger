@@ -36,6 +36,5 @@
     "stompit":"*",
     "jsonwebtoken":"*",
     "jsrsasign":"*"
-
   }
 }

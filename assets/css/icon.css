@@ -757,7 +757,6 @@ and open the template in the editor.
     display: inline-block;
     zoom: 1;
     line-height: 0em;
-    min-height: 20px;
 }
 
 .logger {
