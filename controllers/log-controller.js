@@ -23,7 +23,10 @@ function LogController($config, $event, $logger, $logService, $userService, $sou
                     if(err){
                         io.json(self._getFailStatus(err.message));
                     }else{
-                        data.pagesCount = recordsCountToPagesCount(countArr[0].count,input.pageSize);
+                        data.pagesCount = 0;
+                        if(countArr.length > 0){
+                            data.pagesCount = recordsCountToPagesCount(countArr[0].count,input.pageSize);
+                        }
                         io.json(self._getSuccessStatus(data));
                     }
                 });

@@ -39,41 +39,23 @@ function LogService($config, $event, $logger) {
         delete filterData.pageSize;
         delete filterData.pageId;
         var query = [
-            {$match: filterData},
-            {$sort: {time: 1}}
+            {$match: filterData}
         ];
         if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
             query.push({
                 "$group": {
                     _id: {level: "$level", title: "$title"},
-                    total: {"$sum": 1}
+                    total: {"$sum": 1},
+                    time : {"$max" : "time"}
                 }
             });
         }
+        query.push( {$sort: {time: -1}});
         if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
             query.push({$skip: pagination.skip});
             query.push({$limit: pagination.limit});
-        } else {
-            query.push({$out: "logtemps"});
-
         }
-        var aggregation = Log.aggregate(query);
-        aggregation.options = {allowDiskUse: true};
-        if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
-            aggregation.exec(callbackFn);
-        } else {
-            if (filter.out) {
-                aggregation.exec(function (err, data) {
-                    if (err) {
-                        console.log(err);
-                        return;
-                    }
-                    LogTemp.collection.count({}, callbackFn);
-                });
-            } else {
-                LogTemp.collection.count({}, callbackFn);
-            }
-        }
+        Log.aggregate(query, callbackFn);
     };
 
     this.count = function(filter, callbackFn){
