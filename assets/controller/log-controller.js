@@ -42,8 +42,8 @@ function LogController($scope, $http, $rootScope, $timeout) {
         $(".datepicker").datepicker({
             dateFormat: "dd/mm/yy"
         });
-        // $scope.filter.timeFrom = currentDate;
-        // $(".datepicker").val(currentDate);
+        $scope.filter.timeFrom = currentDate;
+        $(".datepicker").val(currentDate);
         $scope.find();
 
     };
