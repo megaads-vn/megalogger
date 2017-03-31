@@ -8,13 +8,13 @@ var LogTemp = mongoose.model('LogTemp');
 function LogService($config, $event, $logger) {
     this.baseService = this.__proto__ = new BaseService($config, $event, $logger);
     this.create = function (logData, callbackFn) {
-        if(logData.title != null){
+        if (logData.title != null) {
             logData.title_number = crc32(logData.title);
         }
-        if(logData.source != null){
+        if (logData.source != null) {
             logData.source_number = crc32(logData.source);
         }
-        if(logData.level != null){
+        if (logData.level != null) {
             logData.level_number = crc32(logData.level);
         }
         var bug = new Log(logData);
@@ -55,14 +55,14 @@ function LogService($config, $event, $logger) {
         if (typeof filter.notGroup == "undefined" || filter.notGroup == null) {
             query.push({
                 "$group": {
-                    _id: {level: "$level_number", title: "$title_number"},
+                    _id: {title_number: "$title_number", level: "$level", title: "$title"},
                     //_id: {level: "$level", title: "$title"},
-                   total: {"$sum": 1},
-                   time : {"$max" : "time"}
+                    total: {"$sum": 1},
+                    time: {"$max": "time"}
                 }
             });
         }
-        query.push( {$sort: {time: -1}});
+        query.push({$sort: {time: -1}});
         if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
             query.push({$skip: pagination.skip});
             query.push({$limit: pagination.limit});
@@ -71,7 +71,7 @@ function LogService($config, $event, $logger) {
     };
 
 
-    this.count = function(filter, callbackFn){
+    this.count = function (filter, callbackFn) {
         var filterData = buildFilter(filter);
         delete filterData.pageSize;
         delete filterData.pageId;
@@ -88,13 +88,13 @@ function LogService($config, $event, $logger) {
         query.push({
             $group: {
                 _id: null,
-                count: { $sum: 1 }
+                count: {$sum: 1}
             }
         });
         return Log.aggregate(query, callbackFn);
     };
 
-    this.updateAllTitle = function(filter, callbackFn){
+    this.updateAllTitle = function (filter, callbackFn) {
         var filterData = buildFilter(filter);
         delete filterData.pageSize;
         delete filterData.pageId;
@@ -107,13 +107,13 @@ function LogService($config, $event, $logger) {
             }
         });
         var cursor = Log.collection.find({}, ['title']).stream();
-        cursor.on('data', function(doc) {
-            if(doc.title != null){
-                Log.collection.update({title: doc.title}, {$set: {title_number : crc32(doc.title)}}, {multi: true});
+        cursor.on('data', function (doc) {
+            if (doc.title != null) {
+                Log.collection.update({title: doc.title}, {$set: {title_number: crc32(doc.title)}}, {multi: true});
             }
-            
+
         });
-        cursor.on('close', function() {
+        cursor.on('close', function () {
             callbackFn();
         });
     };
@@ -121,11 +121,11 @@ function LogService($config, $event, $logger) {
 
     this.crc32 = crc32;
 
-    this.findCount = function(filter,callbackFn){
+    this.findCount = function (filter, callbackFn) {
         var filterData = buildFilter(filter);
         delete filterData.pageSize;
         delete filterData.pageId;
-        Log.collection.count(filterData,callbackFn);
+        Log.collection.count(filterData, callbackFn);
     };
 
     function buildFilter(filter) {
@@ -203,9 +203,9 @@ function LogService($config, $event, $logger) {
         var y = 0;
 
         crc = crc ^ (-1);
-        for( var i = 0, iTop = str.length; i < iTop; i++ ) {
-            y = ( crc ^ str.charCodeAt( i ) ) & 0xFF;
-            x = "0x" + table.substr( y * 9, 8 );
+        for (var i = 0, iTop = str.length; i < iTop; i++) {
+            y = ( crc ^ str.charCodeAt(i) ) & 0xFF;
+            x = "0x" + table.substr(y * 9, 8);
             crc = ( crc >>> 8 ) ^ x;
         }
 
@@ -214,14 +214,14 @@ function LogService($config, $event, $logger) {
 
 
     function Utf8Encode(string) {
-        string = string.replace(/\r\n/g,"\n");
+        string = string.replace(/\r\n/g, "\n");
         var utftext = "";
 
         for (var n = 0; n < string.length; n++) {
             var c = string.charCodeAt(n);
             if (c < 128) {
                 utftext += String.fromCharCode(c);
-            } else if((c > 127) && (c < 2048)) {
+            } else if ((c > 127) && (c < 2048)) {
                 utftext += String.fromCharCode((c >> 6) | 192);
                 utftext += String.fromCharCode((c & 63) | 128);
             } else {
