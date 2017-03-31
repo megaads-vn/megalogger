@@ -16,6 +16,9 @@ var LogSchema = new Schema({
   userId: { type : String, default : '', trim : true },
   source: { type : String, default : '', trim : true },
   level: { type : String, default : '', trim : true },
+  title_number: { type : Number, default : 0, trim : true, index: true },
+  source_number: { type : Number, default : 0, trim : true },
+  level_number: { type : Number, default : 0, trim : true },
   data: { type : Schema.Types.Mixed, default : {}},
   meta: { type : Schema.Types.Mixed, default : {}},
   time  : { type : Date, default : Date.now }
