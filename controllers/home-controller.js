@@ -1,5 +1,5 @@
 module.exports = HomeController;
-var mongoose = require('mongoose').set('debug', true);
+var mongoose = require('mongoose').set('debug', false);
 var Log = mongoose.model('Log');
 function HomeController($config, $event, $logger, $logService, $userService) {
     var self = this;

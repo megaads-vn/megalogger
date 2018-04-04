@@ -14,5 +14,6 @@ module.exports = {
     encryption: {
         'key': "d6F3Efeq",
         'cipher': "aes-256-ctr"
-    }
+    },
+    token: 'QW9dhUXwlNfQKJnOJmGn4Zgq0dwKNNgOpvzNzcl6ToT4TO'
 };

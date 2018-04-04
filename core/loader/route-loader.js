@@ -21,6 +21,24 @@ function RouteLoader() {
         this.viewEngine = constructorProperties.viewEngine;
         this.httpConnection.asset(processAssetRequest);
     };
+    /**
+     * Grouped routes
+     * @param {callable} routes
+     * @param {} filters
+     * @returns {RouteLoader}
+     */
+    this.group = function (routes, filters) {
+        this.groupFilters = filters;
+        routes.bind(this)();
+        return this;
+    };
+    /**
+     * Register a multi method route
+     * @param {String} routeName
+     * @param {callable | String} action
+     * @param {} filters
+     * @returns {RouteLoader}
+     */
     this.any = function (routeName, route, filters) {
         this.io(routeName, route, filters);
         this.get(routeName, route, filters);
@@ -43,6 +61,9 @@ function RouteLoader() {
     };
     this.get = function (routeName, action, filters) {
         var self = this;
+        if (filters == null && self.groupFilters != null) {
+            filters = self.groupFilters;
+        }
         this.httpConnection.get(routeName, function (req, res) {
             var io = new IO({
                 autoLoader: self.autoLoader,
@@ -57,6 +78,9 @@ function RouteLoader() {
     };
     this.post = function (routeName, action, filters) {
         var self = this;
+        if (filters == null && self.groupFilters != null) {
+            filters = self.groupFilters;
+        }
         this.httpConnection.post(routeName, function (req, res) {
             var io = new IO({
                 autoLoader: self.autoLoader,
