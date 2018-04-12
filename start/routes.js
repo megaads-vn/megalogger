@@ -1,5 +1,11 @@
-module.exports = function ($route, $logger) {
+module.exports = function ($route, $config) {
     /** Register HTTP requests **/
+    $route.group(function () {
+
+        },
+        {
+            before: ["auth"]
+        });
     $route.get("/home", "HomeController@index");
     $route.get("/", "LogController@index");
     $route.get("/rebuild", "LogController@rebuild");
@@ -7,7 +13,6 @@ module.exports = function ($route, $logger) {
     $route.any("/log/find", "LogController@find");
     /** Register socket.io requests **/
     /** Register filters **/
-
     $route.filter("auth", function (io) {
         var authToken = $config.get('app.token');
         if (io.inputs.token == authToken || io.session.token == authToken) {
