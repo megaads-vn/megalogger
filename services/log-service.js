@@ -62,7 +62,8 @@ function LogService($config, $event, $logger) {
                 }
             });
         }
-        query.push({$sort: {time: -1}});
+        //query.push({$sort: {time: -1}});
+        //query.push({$sort: {_id: -1}});
         if (typeof filter.metric == 'undefined' || filter.metric != 'count') {
             query.push({$skip: pagination.skip});
             query.push({$limit: pagination.limit});
