@@ -28,7 +28,7 @@
     "crypto": "*",
     "ejs": "2.*",
     "lru-cache": "*",
-    "mongodb": "^2.2.5",
+    "mongodb": "^3.6.1",
     "socket.io": "1.*",
     "bcrypt-nodejs":"*",
     "mongoose":"*",
